@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Text Editor</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="toolbar">
+  <button id="redButton1" class="button1" onclick="changeColor('red')">Red</button>
+  <button id="blueButton1" class="button1" onclick="changeColor('blue')">Blue</button>
+  <button id="greenButton1" class="button1" onclick="changeColor('green')">Green</button>
+  <button id="16pxButton2" class="button2" onclick="changeSize('16px')">Small</button>
+  <button id="20pxButton2" class="button2" onclick="changeSize('20px')">Medium</button>
+  <button id="24pxButton2" class="button2" onclick="changeSize('24px')">Large</button>
+  <button id="boldButton3"class="button3" onclick="makeBold()">Bold</button>
+</div>
+
+<div class="editor" contenteditable="true" id="editor">
+</div>
+
+<div class="toolbar2">
+    <button id="copy">Copy</button>
+    <button id="save">Save</button>
+    <button id="clear">Clear</button>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
